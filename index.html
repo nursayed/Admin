@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin panel</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- bootstap all css -->
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <!-- animate css -->
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <!-- Fontawesome css -->
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+  <!-- typed css -->
+  <link rel="stylesheet" href="assets/css/typed.css" />
+  <!-- Main css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <!-- responsive css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="row">
+        <div class="nav-left col-md-6 col-lg-6 col-sm-12">
+          <div class="menu-button">
+            <span><i class="fas fa-bars"></i></span>
+          </div>
+          <!-- nabbar -->
+          <div class="sidebar">
+            <div class="logo">laravel</div>
+            <ul>
+              <li><a href="#"><i class="fas fa-university"></i>Dashboard</a></li>
+              <li><a href="#"><i class="fas fa-university"></i>Brands</a></li>
+              <li><a href="#"><i class="fas fa-university"></i>Categories</a></li>
+              <li><a href="#"><i class="fas fa-university"></i>Products</a></li>
+              <li><a href="#"><i class="fas fa-university"></i>Attributes</a></li>
+              <li><a href="#"> <i class="fas fa-cogs"></i> Settings</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-item nav-right col-md-6 col-lg-6 col-sm-12 ">
+          <form action="/action_page.php" method="POST">
+            <input type="text" placeholder="Search.." name="">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+          <div class="user-notification-icon">
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!--  -->
+  <div class="main-body">
+    <h3 class="title col-md-12 col-sm-12 col-lg-12">
+      <div class="container">
+        <i class="fas fa-shopping-bag"></i> 
+        Products - Edit Products
+      </div>
+    </h3>
+    <div class="container">
+      <div class="d-flex align-items-start genarel-body">
+        <div class="col-md-2 col-lg-2 col-sm-12 tabs-menu">
+          <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Genaral</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Images</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Attribute</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+          </div>
+        </div>
+        <div class="col-md-10 col-lg-10 col-sm-12">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              <h2>Product Information</h2>
+              <form>
+                <div>
+                  <label for="Productname" class="form-label">Name</label>
+                  <input type="email" class="form-control" id="Productname" aria-describedby="emailHelp">
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="Productname" class="form-label">SKU</label>
+                    <input type="email" class="form-control" id="Productname" aria-describedby="emailHelp">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="Productname" class="form-label">Brad</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Open this select menu</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="Productname" class="form-label">Price</label>
+                    <input type="email" class="form-control" id="Productname" aria-describedby="emailHelp">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="Productname" class="form-label">Special Price</label>
+                    <input type="email" class="form-control" id="Productname" aria-describedby="emailHelp">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="Productname" class="form-label">SKqantityU</label>
+                    <input type="email" class="form-control" id="Productname" aria-describedby="emailHelp">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="Productname" class="form-label">weight</label>
+                    <input type="email" class="form-control" id="Productname" aria-describedby="emailHelp">
+                  </div>
+                </div>
+                <div>
+                  <label for="Productname" class="form-label">Categories</label>
+                  <input type="email" class="form-control" id="Productname" aria-describedby="emailHelp">
+                </div>
+                <div>
+                  <label for="description" class="form-label">Description</label>
+                  <textarea name="" id="description" rows="5"></textarea>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Status</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                  <label class="form-check-label" for="exampleCheck2">Fetured</label>
+                </div>
+                <hr>
+                <div class="row col-md-12 upload-fetured-btn">
+                  <button type="submit" class="btn btn-primary upload-btn"><i class="fas fa-check-circle"></i> Upload Products</button>
+                  <button type="submit" class="btn btn-primary fetured-btn"><i class="fas fa-arrow-left"></i> Go Back</button>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">..approach. Most of you have already interacted with logical properties thanks to our flex utilities—they replace direction properties like left and right in favor start and end. That makes the class names and values appropriate for LTR and RTL without any overhead..</div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">..approach. Most of you have already interacted with logical properties thanks to our flex utilities—they replace direction properties like left and right in favor start and end. That makes the class names and values appropriate for LTR and RTL without any overhead..</div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">..approach. Most of you have already interacted with logical properties thanks to our flex utilities—they replace direction properties like left and right in favor start and end. That makes the class names and values appropriate for LTR and RTL without any overhead..</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- Jquery js -->
+  <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+  <!-- proper -->
+  <script src="assets/js/popper.min.js"></script>
+  <!-- bootstrap -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- font awesome -->
+  <script src="assets/js/fontawesome.min.js"></script>
+  <!-- animate js -->
+  <script src="assets/js/wow.min.js"></script>
+  <!-- main js -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
